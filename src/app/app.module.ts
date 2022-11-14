@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // material
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatListModule } from '@angular/material/list';
 
 // comps
 import { HeaderComponent } from './header/header.component';
@@ -29,7 +31,13 @@ import { RecipeListItemComponent } from './recipe-book/recipe-list-item/recipe-l
     IngredientComponent,
     RecipeListItemComponent,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, MatGridListModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatListModule,
+    MatMenuModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
