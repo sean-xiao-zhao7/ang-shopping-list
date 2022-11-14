@@ -8,6 +8,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
 
 // comps
 import { HeaderComponent } from './header/header.component';
@@ -34,7 +37,10 @@ import { RecipeListItemComponent } from './recipe-book/recipe-list-item/recipe-l
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
     MatGridListModule,
+    MatIconModule,
     MatListModule,
     MatMenuModule,
   ],

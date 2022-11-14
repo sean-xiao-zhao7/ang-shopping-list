@@ -1,1 +1,14 @@
-<p>recipe-details works!</p>
+<mat-card>
+  <mat-card-title>Title</mat-card-title>
+  <mat-card-subtitle>Description</mat-card-subtitle>
+  <!-- <img mat-card-image src="a" /> -->
+  <button mat-button [matMenuTriggerFor]="menu">Manage</button>
+  <mat-card-actions>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Add to list</button>
+      <button mat-menu-item>Edit</button>
+      <button mat-menu-item>Delete</button>
+    </mat-menu>
+  </mat-card-actions>
+  <mat-card-content> Ingredients </mat-card-content>
+</mat-card>
