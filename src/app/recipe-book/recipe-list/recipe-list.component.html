@@ -6,7 +6,10 @@
   <mat-icon>add</mat-icon>
 </button>
 <mat-action-list>
-  <mat-list-item *ngFor="let recipe of recipeList">
-    <p>{{ recipe.name }}</p>
+  <mat-list-item
+    *ngFor="let currentRecipe of recipeList"
+    (click)="changeRecipe(currentRecipe.name)"
+  >
+    <app-recipe-list-item [recipe]="currentRecipe"></app-recipe-list-item>
   </mat-list-item>
 </mat-action-list>

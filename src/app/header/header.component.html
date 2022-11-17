@@ -1,9 +1,13 @@
 <h1>Header</h1>
 <div id="nav">
   <mat-nav-list>
-    <a mat-list-item href="#">Recipe book</a>
-    <a mat-list-item href="#">Recipes</a>
-    <a mat-list-item href="#">Shopping list</a>
+    <a mat-list-item href="#" (click)="changeCompShown('recipe-book')"
+      >Recipe book</a
+    >
+    <a mat-list-item href="#" (click)="changeCompShown('recipes')">Recipes</a>
+    <a mat-list-item href="#" (click)="changeCompShown('shopping-list')"
+      >Shopping list</a
+    >
     <mat-list-item>
       <button mat-button [matMenuTriggerFor]="menu">Manage</button>
       <mat-menu #menu="matMenu">

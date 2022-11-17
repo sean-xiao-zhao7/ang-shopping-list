@@ -1,7 +1,11 @@
 <h1>Recipe book</h1>
 <mat-grid-list cols="4" rowHeight="1:1">
-  <mat-grid-tile><app-recipe-list></app-recipe-list></mat-grid-tile>
+  <mat-grid-tile
+    ><app-recipe-list
+      (emitChangeRecipe)="onEmitChangeRecipe($event)"
+    ></app-recipe-list
+  ></mat-grid-tile>
   <mat-grid-tile [colspan]="3"
-    ><app-recipe-details></app-recipe-details
+    ><app-recipe-details [recipe]="currentRecipe"></app-recipe-details
   ></mat-grid-tile>
 </mat-grid-list>
