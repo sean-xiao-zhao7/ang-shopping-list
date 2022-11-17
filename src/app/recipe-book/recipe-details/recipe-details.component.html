@@ -1,7 +1,7 @@
 <mat-card>
   <mat-card-title>{{ recipe.name }}</mat-card-title>
   <mat-card-subtitle>{{ recipe.description }}</mat-card-subtitle>
-  <!-- <img mat-card-image src="a" /> -->
+  <img mat-card-avatar src="{{ recipe.imageUrl }}" />
   <button mat-button [matMenuTriggerFor]="menu">Manage</button>
   <mat-card-actions>
     <mat-menu #menu="matMenu">
@@ -10,5 +10,5 @@
       <button mat-menu-item>Delete</button>
     </mat-menu>
   </mat-card-actions>
-  <mat-card-content> Ingredients </mat-card-content>
+  <mat-card-content>Ingredients:</mat-card-content>
 </mat-card>
